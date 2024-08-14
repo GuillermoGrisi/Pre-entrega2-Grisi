@@ -4,6 +4,13 @@
     box-sizing: border-box;
     font-family:cursive;
 }
+#menu_hamb{
+    width: 60px;
+    height: 60px;
+}
+#boton:hover{
+    background-color: #d8dfd8;
+}
 a{
     text-decoration: none !important;
  }
