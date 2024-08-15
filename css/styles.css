@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family:cursive;
 }
+header{
+    height: 25vh;
+}
 #menu_hamb{
     width: 60px;
     height: 60px;
