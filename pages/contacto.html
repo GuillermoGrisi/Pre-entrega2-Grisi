@@ -110,7 +110,71 @@
         </section>
       </div>
     </header>
-    <main></main>
+    <main class="container-fluid mt-5">
+      <div class="row d-flex justify-content-around m-0 p-2 p-sm-1">
+        <h2 class="col-11 col-md-8 col-lg-7">Contacto</h2>
+        <section class="col-11 col-md-8 col-lg-7 border border-black p-4">
+          <form action="" method="post" id="form_contacto">
+            <div
+              class="container-fluid p-0 d-flex flex-column flex-md-row justify-content-evenly"
+            >
+              <div class="col-12 col-md-5">
+                <label for="nombre">Nombre:</label><br />
+                <input
+                  class="w-100 border-black mb-3 rounded p-1"
+                  type="text"
+                  name="nombre"
+                  id="nombre"
+                  required
+                /><br />
+              </div>
+              <div class="col-2"></div>
+              <div class="col-12 col-md-5">
+                <label for="apellido">Apellido:</label><br />
+                <input
+                  class="w-100 border-black mb-3 rounded p-1"
+                  type="text"
+                  name="apellido"
+                  id="apellido"
+                  required
+                /><br />
+              </div>
+            </div>
+            <label for="email">Correo electrónico:</label><br />
+            <input
+              class="w-100 border-black mb-3 rounded p-1"
+              type="email"
+              id="email"
+              name="email"
+              required
+            /><br />
+            <label for="telefono">Teléfono:</label><br />
+            <input
+              class="w-50 border-black mb-3 rounded p-1"
+              type="tel"
+              id="telefono"
+              name="telefono"
+              required
+            /><br />
+            <label for="consulta">Consulta:</label><br />
+            <textarea
+              class="w-100 border-black mb-3 rounded p-1"
+              id="consulta"
+              name="consulta"
+              rows="5"
+              required
+            ></textarea
+            ><br />
+            <input
+              class="bg-success bg-opacity-75 w-25 border p-2 rounded float-end"
+              type="submit"
+              value="Enviar"
+              id="boton_enviar"
+            />
+          </form>
+        </section>
+      </div>
+    </main>
     <footer class="container-fluid m-0 p-0 bg-primary bg-opacity-50 mt-5 p-4">
       <div class="row d-flex justify-content-beetween">
         <section
