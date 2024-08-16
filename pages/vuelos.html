@@ -115,49 +115,67 @@
       <div class="row d-flex justify-content-around m-0 p-2 p-sm-1">
         <section class="col-11 col-md-8 border border-black p-4">
           <form action="" method="post" id="formulario_vuelos">
-            <label for="ciudad_origen">Ciudad de Origen:</label><br />
+            <label for="ciudad_origen" class="form-label"
+              >Ciudad de origen:</label
+            >
             <input
-              class="w-100 border-black mb-3 rounded p-1"
               type="text"
+              class="form-control w-100 border-black rounded p-1"
               id="ciudad_origen"
               name="ciudad_origen"
-              required
-            /><br />
-            <label for="ciudad_destino">Ciudad de Destino:</label><br />
+              placeholder="Origen"
+            />
+            <br />
+            <label for="ciudad_destino" class="form-label"
+              >Ciudad de destino:</label
+            >
             <input
-              class="w-100 border-black mb-3 rounded p-1"
               type="text"
+              class="form-control w-100 border-black rounded p-1"
               id="ciudad_destino"
               name="ciudad_destino"
-            /><br />
+              placeholder="Destino"
+            />
+            <br />
             <div
               class="container-fluid p-0 d-flex flex-column flex-md-row justify-content-evenly"
             >
               <div class="col-7 col-md-5">
-                <label for="fecha_partida">Fecha de partida:</label><br />
+                <label for="fecha_partida" class="form-label"
+                  >Fecha de partida:</label
+                >
                 <input
-                  class="w-100 border-black mb-3 rounded p-1"
                   type="date"
-                  name="fecha_partida"
+                  class="form-control w-100 border-black rounded p-1"
                   id="fecha_partida"
-                /><br />
+                  name="fecha_partida"
+                />
+                <br />
               </div>
               <div class="col-2"></div>
               <div class="col-7 col-md-5">
-                <label for="fecha_regreso">Fecha de regreso:</label><br />
+                <label for="fecha_regreso" class="form-label"
+                  >Fecha de regreso:</label
+                >
                 <input
-                  class="w-100 border-black mb-4 rounded p-1"
                   type="date"
-                  name="fecha_regreso"
+                  class="form-control w-100 border-black rounded p-1"
                   id="fecha_regreso"
-                /><br />
+                  name="fecha_regreso"
+                />
+                <br />
               </div>
             </div>
             <fieldset
               class="w-100 border border-black mb-4 p-2 pt-5 pb-5 p-sm-5 bg-success-subtle d-flex justify-content-evenly rounded"
             >
-              <label for="adultos">Adultos</label>
-              <select class="w-25 p-1 rounded" name="adultos" id="adultos">
+              <label for="adultos" class="form-label">Mayores</label>
+              <select
+                type="date"
+                class="form-select w-25 border-black rounded p-1"
+                id="adultos"
+                name="adultos"
+              >
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -170,8 +188,13 @@
                 <option value="9">9</option>
                 <option value="10">10</option>
               </select>
-              <label for="menores">Menores</label>
-              <select class="w-25 rounded p-1" name="menores" id="menores">
+              <label for="menores" class="form-label">Menores</label>
+              <select
+                type="date"
+                class="form-select w-25 border-black rounded p-1"
+                id="menores"
+                name="menores"
+              >
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -194,11 +217,83 @@
           </form>
         </section>
         <aside class="d-none d-md-block col-3 border p-0">
-          <img
-            class="w-100 h-100"
-            src="../assets/images/rio.jpg"
-            alt="Imagen de Rio de Janeiro"
-          />
+          <div
+            id="carouselExampleDark"
+            class="carousel carousel-dark slide h-100"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="0"
+                class="active bg-white"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                class="bg-white"
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                class="bg-white"
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner h-100">
+              <div class="carousel-item active h-100">
+                <img
+                  src="../assets/images/temp_alta.jpg"
+                  class="d-block w-100 h-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item h-100">
+                <img
+                  src="../assets/images/america.jpg"
+                  class="d-block w-100 h-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item h-100">
+                <img
+                  src="../assets/images/rio.jpg"
+                  class="d-block w-100 h-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </aside>
       </div>
     </main>
